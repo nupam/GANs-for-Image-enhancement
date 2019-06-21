@@ -8,6 +8,7 @@ Two models are trained, there is only one major differene between the model is t
 ### DATA 
 High Resolution images used here are from the Flickr-Image-Dataset available at, https://www.kaggle.com/hsankesara/flickr-image-dataset. This is a very diverse dataset and generating photo realistic images from only using this dataset (30k images) is cannot be considered easy. <br>
 Noisy(crappy) images are sythetically generated from high resolution images as in the notebook "Crappify-imgs", available in the repository and at https://www.kaggle.com/greenahn/crappify-imgs.<br>
+nbviewer link: https://nbviewer.jupyter.org/github/nupam/GANs-for-Image-enhancement/blob/master/Crappify-imgs.ipynb<br>
 These images are then used as data for training.<br><br>
 
 ### Model
