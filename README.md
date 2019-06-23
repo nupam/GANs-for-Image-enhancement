@@ -1,5 +1,6 @@
 # GANs-for-Image-enhancement
 ## Comparing supervised features in GANs with pretraining for image enhancement(superres and decrappify)
+#### A big thanks to Jeremy Howard, fast.ai, for his lectures on Deeplearning.
 
 GANs are hard to train. They are notoriously hard to train, require multiple GPUs and training time ranges from many hours to days, and also requiring tons of data. Here we compare two GANs whhose discriminator and generators are first pretrained, then put together as GAN.
 
