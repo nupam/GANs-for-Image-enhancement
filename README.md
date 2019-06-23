@@ -47,7 +47,8 @@ In addition generator models are also exported as 'export.pkl'.<br><br>
 ### Observations
 Training was fast.<br>
 Considering the time required for training GANs, these models trained faster, total of around 9hrs(per model, including pretraining on 1 GPU)<br>
-The model trained with feature loss perfomed much better than without it.<br>
+These models produced good results, second model, with feature-loss produced almost photo-realistic images, from coarse grainy images with bad lighting conditions. The first model was not so good.<br>
+Concluding, the model trained with feature loss perfomed better than without it.<br>
 High level features like fur, textures of objects, eyes were more clear in almost every case than that of with MSE.<br>
 
 ### Compromises and things that could have been better
