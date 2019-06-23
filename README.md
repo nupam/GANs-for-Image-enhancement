@@ -36,8 +36,20 @@ The discriminator and generator are then put together as Gan and trained.
 It is trained by switching adaptively between discriminator and generator wheneverever discriminator loss drops below certain threshold.<br>
 Learning rate used is the standard LR for GANs, i.e, 0.0002, after training for some time it is then reduced to 0.0001.
 Original notebook for model pretrained with MSE: https://www.kaggle.com/greenahn/train-gan-mse<br>
+nbviewer: https://nbviewer.jupyter.org/github/nupam/GANs-for-Image-enhancement/blob/master/train-gan-mse.ipynb<br>
 and for pretrained with Feature-loss https://www.kaggle.com/greenahn/train-gan-l1-and-features<br>
-in addition to this repository.<br>
+nbviewer: https://nbviewer.jupyter.org/github/nupam/GANs-for-Image-enhancement/blob/master/train-gan-l1-and-features.ipynb<br>
+in addition to this repository.<br><br>
 
-All trained models are saved and available as in the notebooks on kaggle and can be downloaded.<br>
-In addition generator models are also exported as 'export.pkl'.
+#### All trained models are saved and available as part of the notebooks on kaggle and can be downloaded (links above).<br>
+In addition generator models are also exported as 'export.pkl'.<br><br>
+
+### Observations
+Training was fast.<br>
+Considering the time required for training GANs, these models trained faster, total of around 9hrs(per model, including pretraining on 1 GPU)<br>
+The model trained with feature loss perfomed much better than without it.<br>
+High level features like fur, textures of objects, eyes were more clear in almost every case than that of with MSE.<br>
+
+### Compromises and things that could have been better
+We can use WGAN inplace of standard GAN loss(optimization of JS divergence).<br>
+and oviously more training.<br>
