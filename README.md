@@ -41,7 +41,7 @@ and for pretrained with Feature-loss https://www.kaggle.com/greenahn/train-gan-l
 nbviewer: https://nbviewer.jupyter.org/github/nupam/GANs-for-Image-enhancement/blob/master/train-gan-l1-and-features.ipynb<br>
 in addition to this repository.<br><br>
 
-#### All trained models are saved and available as part of the notebooks on kaggle and can be downloaded (links above).<br>
+#### All trained models are saved and are available as part of the notebooks on kaggle and can be downloaded (links above).<br>
 In addition generator models are also exported as 'export.pkl'.<br><br>
 
 ### Observations
