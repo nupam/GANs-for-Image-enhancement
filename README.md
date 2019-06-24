@@ -55,5 +55,5 @@ High level features like fur, textures of objects, eyes were more clear in almos
 ### Compromises and things that could have been better
 * WGAN can be used in place of standard GAN loss(optimization of JS divergence),<br>
 * Rather than having a hardcoded loss function based on features from pretrained model, we can cancatenate those feature to the input of discriminator,<br>
-* Adding self attention to generator,d, model_dir="/kaggle/working", gen_first=True<br>
-* and, oviously more training and/or bigger network(resnet50-backbnne).<br>
+* Adding self attention to generator,<br>
+* and, oviously more training with bigger network(e.g: resnet50-backbone).<br>
