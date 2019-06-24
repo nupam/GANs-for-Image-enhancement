@@ -2,7 +2,7 @@
 ## Comparing supervised feature loss in GANs with pretraining for image enhancement(superres and decrappify)
 #### A big thanks to Jeremy Howard, fast.ai, for his lectures on Deeplearning
 #### Skip to end of this readme for observations
-#### If viewing notebooks on github fails, try nbviewer links in this readme
+#### If viewing notebooks on github fails, try nbviewer/kaggle links in this readme
 
 GANs are hard to train. They are notoriously hard to train, require multiple GPUs and training time ranges from many hours to days, and also requiring tons of data. Here we compare two GANs whhose discriminator and generators are first pretrained, then put together as GAN.
 
