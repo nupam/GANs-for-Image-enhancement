@@ -1,6 +1,7 @@
 # GANs-for-Image-enhancement
 ## Comparing supervised features in GANs with pretraining for image enhancement(superres and decrappify)
 #### A big thanks to Jeremy Howard, fast.ai, for his lectures on Deeplearning.
+#### Skip to end of this readme for observations
 
 GANs are hard to train. They are notoriously hard to train, require multiple GPUs and training time ranges from many hours to days, and also requiring tons of data. Here we compare two GANs whhose discriminator and generators are first pretrained, then put together as GAN.
 
@@ -48,9 +49,10 @@ In addition generator models are also exported as 'export.pkl'.<br><br>
 ### Observations
 Training was fast.<br>
 Considering the time required for training GANs, these models trained faster, total of around 9hrs(per model, including pretraining on 1 GPU)<br>
-These models produced good results, second model, with feature-loss produced almost photo-realistic images, from coarse grainy images with bad lighting conditions. The first model was not so good.<br>
+These models produced good results, second model, with feature-loss produced almost photo-realistic images, from coarse grainy images with bad lighting conditions. The first model was not so good. It produced blurry images.<br>
 Concluding, the model trained with feature loss perfomed better than without it.<br>
 High level features like fur, textures of objects, eyes were more clear in almost every case than that of with MSE.<br>
+While training the first model(with MSE) was unstable created peaks in loss, a wgan would have been better for this one.<br>
 
 ### Compromises and things that could have been better
 * WGAN can be used in place of standard GAN loss(optimization of JS divergence),<br>
