@@ -1,5 +1,5 @@
 # GANs-for-Image-enhancement
-## Comparing supervised features in GANs with pretraining for image enhancement(superres and decrappify)
+## Comparing supervised feature loss in GANs with pretraining for image enhancement(superres and decrappify)
 #### A big thanks to Jeremy Howard, fast.ai, for his lectures on Deeplearning.
 #### Skip to end of this readme for observations
 
