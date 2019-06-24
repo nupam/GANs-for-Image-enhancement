@@ -22,7 +22,6 @@ The discriminator is a gan_critic() also available in fastai library which has s
 
 ### Training
 First of all, models are pretrained.
-
 #### Pretraining
 ##### Generator
 The first one uses Mean Squared Error(MSE) as loss. first, the unet is trained by freezing the pretrained resnet-34 part. Then, all of the model is unfreezed and finetuned using smaller learning rate. The image size used in beginning is 128X128, Then the size is increasedd to 256X256 and trained again in a similar way. The notebook is available at https://www.kaggle.com/greenahn/pretrain-gan-mse in addition to the repository.<br>
@@ -47,12 +46,14 @@ in addition to this repository.<br><br>
 In addition generator models are also exported as 'export.pkl'.<br><br>
 
 ### Observations
-Training was fast.<br>
-Considering the time required for training GANs, these models trained faster, total of around 9hrs(per model, including pretraining on 1 GPU)<br>
-These models produced good results, second model, with feature-loss produced almost photo-realistic images, from coarse grainy images with bad lighting conditions. The first model was not so good. It produced blurry images.<br>
-Concluding, the model trained with feature loss perfomed better than without it.<br>
-High level features like fur, textures of objects, eyes were more clear in almost every case than that of with MSE.<br>
-While training the first model(with MSE) was unstable created peaks in loss, a wgan would have been better for this one.<br>
+##### It is possible to generate good images without using GANs by just using features from pretrained models in an unet, as it is trained done here as a part of pretraining, but results were much better on smaller dataset with more diversity with GANs.
+On simpler datasets like 'Oxford 102 Flowers dataset' such models are enough, but Flickr-30k-dataset is harder.<br><br>
+* Training was fast.<br>
+* Considering the time required for training GANs, these models trained faster, total of around 9hrs(per model, including pretraining on 1 GPU)<br>
+* These models produced good results, second model, with feature-loss produced almost photo-realistic images, from coarse grainy images with bad lighting conditions. The first model was not so good. It produced blurry images.<br>
+* High level features like fur, textures of objects, eyes were more clear in almost every case than that of with MSE.<br>
+* While training the first model(with MSE) was unstable created peaks in loss, a wgan should be preferred for this one.<br>
+* Concluding, the model trained with feature loss perfomed better than without it, maybe because pretraining already brought predictions close to ground truth.<br>
 
 ### Compromises and things that could have been better
 * WGAN can be used in place of standard GAN loss(optimization of JS divergence),<br>
