@@ -46,7 +46,7 @@ in addition to this repository.<br><br>
 In addition generator models are also exported as 'export.pkl'.<br><br>
 
 ### Observations
-##### It is possible to generate good images without using GANs by just using features from pretrained models in an unet, as it is trained done here as a part of pretraining, but results were much better on smaller dataset with more diversity with GANs.
+##### It is possible to generate good images without using GANs by just using features from pretrained models in an unet, as it is done here as a part of pretraining, but results with GANs were much better on smaller dataset with more diversity as here.
 On simpler datasets like 'Oxford 102 Flowers dataset' such models are enough, but Flickr-30k-dataset is harder.<br><br>
 * Training was fast.<br>
 * Considering the time required for training GANs, these models trained faster, total of around 9hrs(per model, including pretraining on 1 GPU)<br>
