@@ -53,5 +53,7 @@ Concluding, the model trained with feature loss perfomed better than without it.
 High level features like fur, textures of objects, eyes were more clear in almost every case than that of with MSE.<br>
 
 ### Compromises and things that could have been better
-We can use WGAN inplace of standard GAN loss(optimization of JS divergence).<br>
-and oviously more training.<br>
+* WGAN can be used in place of standard GAN loss(optimization of JS divergence),<br>
+* Rather than having a hardcoded loss function based on features from pretrained model, we can cancatenate those feature to the input of discriminator,<br>
+* Adding self attention to generator,d, model_dir="/kaggle/working", gen_first=True<br>
+* and, oviously more training and/or bigger network(resnet50-backbnne).<br>
