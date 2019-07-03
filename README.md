@@ -4,7 +4,8 @@
 #### Skip to end of this readme for observations
 #### If viewing notebooks on github fails, try nbviewer/kaggle links in this readme
 
-### you can test it out at: http://anupam.gq:5042/
+#### you can test it out at: http://anupam.gq:5042/
+(ps: if unavailable, will be back in a moment)<br>
 
 GANs are hard to train. They are notoriously hard to train, require multiple GPUs and training time ranges from many hours to days, and also requiring tons of data. Here we compare two GANs whhose discriminator and generators are first pretrained, then put together as GAN.
 
