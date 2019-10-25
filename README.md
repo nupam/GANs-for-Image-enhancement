@@ -12,8 +12,8 @@ GANs are hard to train. They are notoriously hard to train, require multiple GPU
 Two models are trained, there is only one major differene between the model is that of loss function used for pretraining GAN, all other hyper-parameters are same unless otherwise stated.
 
 ### DATA 
-High Resolution images used here are from the Flickr-Image-Dataset available at, https://www.kaggle.com/hsankesara/flickr-image-dataset. This is a very diverse dataset and generating photo realistic images from only using this dataset (30k images) cannot be considered easy. <br>
-Noisy(crappy) images are sythetically generated from high resolution images as in the notebook 'Crappify-imgs', available in the repository and at https://www.kaggle.com/greenahn/crappify-imgs or at <a href = "https://nbviewer.jupyter.org/github/nupam/GANs-for-Image-enhancement/blob/master/Crappify-imgs.ipynb"> nbviewer </a> <br>
+High Resolution images used here are from the <a href ="https://www.kaggle.com/hsankesara/flickr-image-dataset">  Flickr-Image-Dataset</a>. This is a very diverse dataset and generating photo realistic images from only using this dataset (30k images) cannot be considered easy.<br>
+Noisy(crappy) images are sythetically generated from high resolution images as in the notebook 'Crappify-imgs', available in the repository and at <a href ="https://www.kaggle.com/greenahn/crappify-imgs"> Kaggle </a> or at <a href = "https://nbviewer.jupyter.org/github/nupam/GANs-for-Image-enhancement/blob/master/Crappify-imgs.ipynb"> nbviewer </a> <br>
 These images are used for training models.<br>
 The dataset of generated images along with their high resolution counter-parts is available at: https://www.kaggle.com/greenahn/flickrproc<br>
 
