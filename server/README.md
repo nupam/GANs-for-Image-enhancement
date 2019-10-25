@@ -1,4 +1,6 @@
-download the trained model, export.pkl from the link in provided in github repository and put it in models folder.
+#### This directory contains a simple python server to ttest the working of the application.
+
+Download the trained model, export.pkl from the link in provided in github repository and put it in models folder.
 
 run the application using command "python server.py serve" to start the server.
 The server can be then found on port 5042.
