@@ -7,6 +7,8 @@
 #### you can test it out at: http://anupam.gq:5042/
 (ps: if unavailable, let me know)<br>
 
+#### It includes a web application to view the automatic image enhancement. <br>
+
 GANs are hard to train. They are notoriously hard to train, require multiple GPUs and training time ranges from many hours to days, and also requiring tons of data. Here we compare two GANs whhose discriminator and generators are first pretrained, then put together as GAN.
 
 Two models are trained, there is only one major differene between the model is that of loss function used for pretraining GAN, all other hyper-parameters are same unless otherwise stated.
